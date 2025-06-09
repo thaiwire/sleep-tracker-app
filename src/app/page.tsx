@@ -4,6 +4,7 @@ import Guest from "@/components/Guest";
 import AddNewRecord from "@/components/AddNewRecord";
 import RecordChart from "@/components/ReportChart";
 import AverageSleep from "@/components/AverageSleep";
+import BestWorstSleep from "@/components/BestWorstSleep";
 
 export default  async function HomePage() {
   const user = await currentUser();
@@ -56,7 +57,9 @@ export default  async function HomePage() {
       <div className='space-y-6'>
         {/* Placeholder for RecordStats, RecentRecord, and Insights */}
          <RecordChart />
-          <AverageSleep />        
+          <AverageSleep />       
+          <BestWorstSleep />
+           
       </div>
     </div>
     {/* Placeholder for SleepHistory */}
